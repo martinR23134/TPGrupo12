@@ -75,8 +75,13 @@ sidebarBtn.addEventListener("click", ()=>{
 
 
 
+// API carousel 
 
-
-// API
-
-// 
+fetch('https://fakestoreapi.com/products')
+  .then(response => response.json())
+  .then(data => {
+    
+  })
+  .catch(error => {
+    console.error('Error al obtener los productos:', error);
+  });
